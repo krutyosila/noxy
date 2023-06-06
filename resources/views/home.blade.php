@@ -29,6 +29,9 @@
         input {
             text-transform: uppercase;
         }
+        .text-noxy {
+            color: #ab1300;
+        }
         ::-webkit-input-placeholder { /* WebKit browsers */
             text-transform: none;
         }
@@ -56,9 +59,9 @@
                     <div class="text-center pb-4">
                         <img src="{{ asset('noxy-logo.png') }}" height="60px" alt="Noxy Labs">
                     </div>
-                    <h5 class="text-center">NOXY LABS ANTI-COUNTERFEITING SYSTEM</h5>
+                    <h5 class="text-center"><span class="text-noxy">NOXY LABS</span> ANTI-COUNTERFEITING SYSTEM</h5>
                     <p class="text-justify">
-                        In order to assure all of you enjoy the benefits of authentic <b>Noxy Labs</b> products, our
+                        In order to assure all of you enjoy the benefits of authentic <b class="text-noxy">Noxy Labs</b> products, our
                         company constantly push ourselves to limits, we focus on solutions that serve our customers to
                         verify authenticity with a multi-layered technology that uses multiple random and unique
                         signatures.
