@@ -47,6 +47,16 @@
         ::placeholder { /* Recent browsers */
             text-transform: none;
         }
+        .btn-outline-noxy {
+            border-color: #ab1300;
+            color: #ab1300;
+        }
+
+        .btn-outline-noxy:hover, .btn-outline-noxy:active {
+            border-color: #ab1300;
+            color: #FFF;
+            background-color: #ab1300;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -99,7 +109,7 @@
                     </div>
                     <div class="row justify-content-center pt-3">
                         <div class="col-5">
-                            <a href="#" class="btn btn-sm btn-outline-primary w-100">Test Reports</a>
+                            <a href="#" class="btn btn-sm btn-outline-noxy w-100">Test Reports</a>
                         </div>
                         <div class="col-5">
                             @csrf
@@ -108,8 +118,8 @@
                                 Check</a>
                         </div>
                     </div>
-                    <div class="pt-4 small">
-                        contact: <a href="" class="text-decoration-none">noxylabs@proton.me</a>
+                    <div class="pt-4 small text-center">
+                        contact: <a href="mailto:noxylabs@proton.me" class="text-decoration-none text-noxy">noxylabs@proton.me</a>
                     </div>
                 </div>
             </div>
