@@ -27,6 +27,7 @@ class MainController extends Controller
             if($check->state) {
                 $return = ['error' => 'alert', 'alert' => 'warning', 'title' => 'VALID CODE', 'message' => 'Code was checked'];
             } else {
+                $check->update(['state' => true]);
                 $return = ['error' => 'alert', 'alert' => 'success', 'title' => 'VALID CODE', 'message' => 'Code is found'];
             }
         }
