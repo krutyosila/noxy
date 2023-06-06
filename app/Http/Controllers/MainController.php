@@ -14,8 +14,10 @@ class MainController extends Controller
 
     public function check(Request $request)
     {
-        return response()->json($return = ['error' => 'alert', 'alert' => 'danger', 'title' => 'INVALID CODE', 'message' => 'Code is not found']);
         if(empty($request->get('code'))){
+            return ['error' => 'input'];
+        }
+        if(strlen($request->get('code')) != 14) {
             return ['error' => 'input'];
         }
         $check = Code::where('code', $request->get('code'))->first();

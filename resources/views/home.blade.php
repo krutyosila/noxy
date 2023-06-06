@@ -144,7 +144,6 @@
                 if (rsp.error === 'alert') {
                     $('#alert').html('<div class="alert alert-' + rsp.alert + '"><h4 class="alert-heading">' + rsp.title + '</h4>' + rsp.message + '</div>')
                 }
-                console.log(rsp);
             });
         });
     });
