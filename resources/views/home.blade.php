@@ -26,6 +26,24 @@
         h6 {
             font-size: .7rem;
         }
+        input {
+            text-transform: uppercase;
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            text-transform: none;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            text-transform: none;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            text-transform: none;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+            text-transform: none;
+        }
+        ::placeholder { /* Recent browsers */
+            text-transform: none;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -63,6 +81,9 @@
                     </p>
                     <div class="row justify-content-center">
                         <div class="col-12" id="alert"></div>
+                        <div class="col-12 pb-1 text-center">
+                            <b class="small">ENTER CODE</b>
+                        </div>
                         <div class="col-4">
                             <input id="code-1" maxlength="4" type="text" class="form-control text-center">
                         </div>
